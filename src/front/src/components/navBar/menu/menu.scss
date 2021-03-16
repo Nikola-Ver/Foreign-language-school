@@ -1,0 +1,69 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  border-bottom: 2px black solid;
+
+  .blue-item,
+  .pink-item {
+    height: 58px;
+    border-top: 2px black solid;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+
+    div {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .pink-item {
+    background-color: #ece3ff;
+  }
+
+  .home-img {
+    background: url('../../../img/home.png') no-repeat;
+  }
+
+  .schedule-img {
+    background: url('../../../img/schedule.png') no-repeat;
+  }
+
+  .progress-img {
+    background: url('../../../img/progress.png') no-repeat;
+  }
+
+  .home-work-img {
+    background: url('../../../img/home-work.png') no-repeat;
+  }
+
+  .courses-img {
+    background: url('../../../img/courses.png') no-repeat;
+  }
+
+  .message-img {
+    background: url('../../../img/message.png') no-repeat;
+  }
+
+  .material-img {
+    background: url('../../../img/material.png') no-repeat;
+  }
+
+  .exit-img {
+    background: url('../../../img/exit.png') no-repeat;
+  }
+}

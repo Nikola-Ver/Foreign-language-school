@@ -1,0 +1,69 @@
+.nav-bar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  height: 79px;
+  width: 100%;
+  background-color: #8ba8d3;
+  overflow: hidden;
+  transition: 0.5s;
+
+  &.active {
+    height: 100vh;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    height: 79px;
+    width: 100%;
+    background-color: #8ba8d3;
+
+    .ex-button {
+      width: 61px;
+      height: 56px;
+      margin: 10px;
+      padding-top: 3px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      transition: 0.3s;
+
+      div {
+        transition: 0.2s;
+        width: 13px;
+        height: 13px;
+        padding: 2px;
+        border: 4px #3b3742de solid;
+        border-radius: 4px;
+      }
+
+      &:hover {
+        background-color: #3b3742de;
+
+        div {
+          transform: rotate(90deg);
+          border-color: #ece3ff;
+        }
+      }
+    }
+
+    .settings-button {
+      width: 64px;
+      height: 64px;
+      background: url('../../img/settings.png') no-repeat;
+      margin: auto;
+      margin-right: 15px;
+    }
+
+    .profile-button {
+      width: 64px;
+      height: 64px;
+      background: url('../../img/profile.png') no-repeat;
+      margin: auto;
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+}
