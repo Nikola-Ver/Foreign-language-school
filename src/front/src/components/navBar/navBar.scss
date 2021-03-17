@@ -20,6 +20,7 @@
     background-color: #8ba8d3;
 
     .ex-button {
+      cursor: pointer;
       width: 61px;
       height: 56px;
       margin: 10px;
@@ -50,6 +51,7 @@
     }
 
     .settings-button {
+      cursor: pointer;
       width: 64px;
       height: 64px;
       background: url('../../img/settings.png') no-repeat;
@@ -58,6 +60,7 @@
     }
 
     .profile-button {
+      cursor: pointer;
       width: 64px;
       height: 64px;
       background: url('../../img/profile.png') no-repeat;

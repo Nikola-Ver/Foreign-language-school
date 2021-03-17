@@ -10,7 +10,7 @@
 .auth-form {
   margin: auto;
   width: 70%;
-  height: 100vh;
+  height: calc(100vh - 79px);
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@
   }
 
   .submit-button {
+    cursor: pointer;
     text-align: center;
     height: 70px;
     font-weight: 700;
@@ -40,6 +41,7 @@
   }
 
   .forgot-password-button {
+    cursor: pointer;
     margin-top: 35px;
     @include text-auht;
     color: #7C70A0;
@@ -49,6 +51,7 @@
   }
 
   .create-account-button {
+    cursor: pointer;
     margin-top: 35px;
     @include text-auht;
     font-weight: 700;
