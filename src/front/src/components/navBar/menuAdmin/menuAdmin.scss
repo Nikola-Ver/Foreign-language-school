@@ -1,4 +1,4 @@
-.menu {
+.menu-admin {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -38,16 +38,18 @@
     background-color: #ece3ff;
   }
 
-  .home-img {
-    background: url('../../../img/home.png') no-repeat;
+  .news-img {
+    background: url('../../../img/article.png') no-repeat;
+    background-size: cover;
+    opacity: 0.7;
   }
 
   .schedule-img {
     background: url('../../../img/schedule.png') no-repeat;
   }
 
-  .progress-img {
-    background: url('../../../img/progress.png') no-repeat;
+  .users-img {
+    background: url('../../../img/users.png') no-repeat;
   }
 
   .home-work-img {

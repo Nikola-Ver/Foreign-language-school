@@ -1,0 +1,58 @@
+.schedule {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 36px;
+    background-color: #b4cef5;
+    border: 1px black solid;
+    border-radius: 18px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .data-box {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    border-bottom: none;
+    background: #b4cef5;
+
+    #data {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+    }
+  }
+
+  .info {
+    width: 90%;
+    height: calc(100vmax - 270px);
+    margin: auto;
+    border: 1px black solid;
+    background: white;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}

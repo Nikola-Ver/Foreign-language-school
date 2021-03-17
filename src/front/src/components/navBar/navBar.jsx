@@ -1,8 +1,10 @@
 import './navBar.scss';
 import Menu from './menu/menu';
+import MenuAdmin from './menuAdmin/menuAdmin';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-function NavBar() {
+function NavBar(props) {
     let [isOpen, setIsOpen] = useState(false);
     const navBarClassName = isOpen ? "nav-bar active" : "nav-bar";
 
@@ -15,10 +17,10 @@ function NavBar() {
                     <div></div>
                     <div></div>
                 </div>
-                <div className="settings-button"></div>
-                <div className="profile-button"></div>
+                <NavLink to="/settings" className="settings-button"></NavLink>
+                <NavLink to="/profile" className="profile-button"></NavLink>
             </div>
-            <Menu />
+            { props?.admin ? <MenuAdmin /> : <Menu /> }
         </div>
     );
 }

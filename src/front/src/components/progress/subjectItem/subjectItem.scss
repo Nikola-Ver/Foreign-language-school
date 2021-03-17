@@ -1,0 +1,40 @@
+.subject-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px black solid;
+  height: 60px;
+
+  &:nth-child(1) {
+    border-top: none;
+  }
+
+  .individual,
+  .group {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+  }
+
+  .individual {
+    background: url('../../../img/person.png') no-repeat;
+  }
+
+  .group {
+    background: url('../../../img/users.png') no-repeat;
+  }
+
+  .language {
+    width: calc(100% - 115px);
+    text-align: center;
+  }
+
+  .mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    border-left: 1px black solid;
+  }
+}

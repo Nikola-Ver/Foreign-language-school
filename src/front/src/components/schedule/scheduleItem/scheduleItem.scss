@@ -1,0 +1,39 @@
+.schedule-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px black solid;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  &:nth-child(1) {
+    border-top: none;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .main-info {
+    margin-left: 20px;
+    flex-grow: 1;
+
+    .subject {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .additional {
+        cursor: pointer;
+    }
+  }
+}

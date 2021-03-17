@@ -1,38 +1,34 @@
 import { NavLink } from 'react-router-dom';
-import './menu.scss';
+import './menuAdmin.scss';
 
-function Menu() {
+function MenuAdmin() {
     return (
-        <div className="menu">
+        <div className="menu-admin">
             <NavLink to="/news" className="pink-item">
-                <div className="home-img"></div>
-                <p>Главная</p>
-            </NavLink>
-            <NavLink to="/schedule" className="blue-item">
-                <div className="schedule-img"></div>
-                <p>Расписание</p>
-            </NavLink>
-            <NavLink to="/progress" className="pink-item">
-                <div className="progress-img"></div>
-                <p>Успеваемость</p>
+                <div className="news-img"></div>
+                <p>Новости</p>
             </NavLink>
             <div className="blue-item">
-                <div className="home-work-img"></div>
-                <p>Домашние задание</p>
+                <div className="schedule-img"></div>
+                <p>Расписание</p>
             </div>
             <div className="pink-item">
-                <div className="courses-img"></div>
-                <p>Курсы</p>
+                <div className="users-img"></div>
+                <p>Пользователи</p>
             </div>
             <div className="blue-item">
                 <div className="message-img"></div>
                 <p>Сообщения</p>
             </div>
             <div className="pink-item">
+                <div className="courses-img"></div>
+                <p>Курсы</p>
+            </div>
+            <div className="blue-item">
                 <div className="material-img"></div>
                 <p>Материалы</p>
             </div>
-            <div className="blue-item">
+            <div className="pink-item">
                 <div className="exit-img"></div>
                 <p>Выход</p>
             </div>
@@ -40,4 +36,4 @@ function Menu() {
     );
 }
 
-export default Menu;
+export default MenuAdmin;
